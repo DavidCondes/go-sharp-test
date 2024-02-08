@@ -1,5 +1,8 @@
 # TechnicalGoSharp
 
+![gif-gosharp](https://github.com/DavidCondes/go-sharp-test/assets/63083227/39c4d1a2-ca17-400c-8e95-fa4d8a518440)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.1.
 
 ## Development server
