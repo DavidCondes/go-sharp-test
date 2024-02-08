@@ -1,0 +1,22 @@
+<div class="form-group">
+
+    <div *ngIf="f['number'].invalid && (f['number'].dirty || f['number'].touched)" class="alert">
+        <div *ngIf="f['number'].errors?.['required']">Número requerido</div>
+        <div *ngIf="f['number'].errors?.['romanNumber']">El número cuenta con símbolos no validos</div>
+        <div *ngIf="f['number'].errors?.['romanValidNumber']">No es un número romano valido</div>
+    </div>
+
+    <form [formGroup]="romanForm" (ngSubmit)="submit()">
+        <label for="number" class="form-label">Número</label>
+        <input type="text" id="number" name="number" class="form-field" formControlName="number" required>        
+        <button type="submit" [disabled]="f['number'].invalid" class="form-submit">Transformar</button>
+    </form>
+</div>
+
+<app-list-results [romanArray]="romanArray"></app-list-results>
+
+
+
+
+
+
